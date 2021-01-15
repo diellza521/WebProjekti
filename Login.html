@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>LogIn</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" ;>
+</head>
+
+<body>
+
+    <ul>
+        <li class><a href="index.html">Home</a></li>
+        <li class><a href="training.html">Training</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+        <li><a href="Login.html">Log In</a></li>
+    </ul>
+    <!DOCTYPE html>
+    <html>
+    <div class="login-page">
+        <div class="form">
+            <form id="registerForm" class="register-form" onsubmit="return validateRegister()">
+                <input type="text" placeholder="user name" id="username" >
+                <input type="password" placeholder="password" id="pass" >
+                <input type="text" placeholder="email id" id="emaili" >
+                <button>Create</button>
+                <p class="message">Already Registered? <a href="#" onclick="showLogin()">Login</a></p>
+            </form>
+
+            <form id="loginForm" class="login-form" action="./index.html" onsubmit="return validateLogin()">
+                <input id="usernamelogin" type="text" placeholder="username">
+                <input id="passLogin" type="password" placeholder="password">
+                <button>Login</button>
+                <p class="message">Not registered? <a href="#" onclick="showRegister()">Register</a></p>
+            </form>
+        </div> 
+    </div>
+    <script src="./login2.js">
+    </script>
+</body>
+
+</html>
